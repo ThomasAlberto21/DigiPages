@@ -9,7 +9,7 @@ class GetStarted extends StatelessWidget {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        color: Colors.blue,
+        color: Colors.blue[700],
         child: Stack(
           children: [
             Center(
@@ -31,7 +31,7 @@ class GetStarted extends StatelessWidget {
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.white),
                     padding: MaterialStateProperty.all(
-                       const EdgeInsets.symmetric(
+                      const EdgeInsets.symmetric(
                           horizontal: 120.0, vertical: 20.0),
                     ),
                     shape: MaterialStateProperty.all(
@@ -42,7 +42,10 @@ class GetStarted extends StatelessWidget {
                   ),
                   child: const Text(
                     "Get Started",
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(
+                      color: Colors.black,
+
+                    ),
                   ),
                 ),
               ),

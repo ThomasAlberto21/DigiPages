@@ -12,7 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "DigiPages",
-      theme: ThemeData(),
+      theme: ThemeData(
+        fontFamily: "Poppins",
+      ),
       home: const GetStarted(),
     );
   }

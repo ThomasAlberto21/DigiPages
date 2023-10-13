@@ -6,6 +6,7 @@ class PracticalShopping extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Color blue = const Color(0xff2563eb);
     return Scaffold(
       body: Container(
         height: MediaQuery.of(context).size.height,
@@ -64,19 +65,19 @@ class PracticalShopping extends StatelessWidget {
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.white,
-                                shape: (const CircleBorder(
+                                shape: ( CircleBorder(
                                   side: BorderSide(
-                                    color: Colors.blue,
+                                    color: blue,
                                     width: 2.0,
                                   ),
                                 )),
                               ),
-                              child: const IconButton(
+                              child:  IconButton(
                                 icon: Icon(
                                   Icons.arrow_back,
-                                  color: Colors.blue,
+                                  color: blue,
                                 ),
-                                padding: EdgeInsets.all(15.0),
+                                padding: const EdgeInsets.all(15.0),
                                 onPressed: null,
                                 iconSize: 30.0,
                               ),
@@ -91,7 +92,7 @@ class PracticalShopping extends StatelessWidget {
                                 );
                               },
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.blue[700],
+                                backgroundColor: blue,
                                 shape: (const CircleBorder()),
                               ),
                               child: const IconButton(

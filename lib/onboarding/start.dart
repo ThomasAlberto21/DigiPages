@@ -6,6 +6,7 @@ class Start extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Color blue = const Color(0xff2563eb);
     return Scaffold(
       body: Container(
         height: MediaQuery.of(context).size.height,
@@ -63,8 +64,7 @@ class Start extends StatelessWidget {
                           );
                         },
                         style: ButtonStyle(
-                          backgroundColor:
-                              MaterialStateProperty.all(Colors.blue[700]),
+                          backgroundColor: MaterialStateProperty.all(blue),
                           padding: MaterialStateProperty.all(
                             const EdgeInsets.symmetric(
                               horizontal: 140.0,

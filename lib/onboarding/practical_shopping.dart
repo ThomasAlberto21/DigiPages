@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:digipages/GetStarted.dart';
+import 'package:digipages/onboarding/go_shop.dart';
 
 class PracticalShopping extends StatelessWidget {
   const PracticalShopping({Key? key}) : super(key: key);
@@ -18,7 +18,7 @@ class PracticalShopping extends StatelessWidget {
               top: MediaQuery.of(context).size.height / 4,
               left: MediaQuery.of(context).size.width / 2 - 150,
               child: Image.asset(
-                "images/practical.png",
+                "images/goShop.png",
                 height: 300,
                 width: 300,
               ),
@@ -31,7 +31,7 @@ class PracticalShopping extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     const Text(
-                      "Belanja Praktis",
+                      "Pergi Ke Toko",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 24.0,
@@ -41,7 +41,7 @@ class PracticalShopping extends StatelessWidget {
                     ),
                     const SizedBox(height: 10.0),
                     const Text(
-                      "Beli barang lewat aplikasi dan ambil di tempat agar terhindar dari antrian di kasir",
+                      "Pergi ke toko untuk mengambil barang yang sudah dipesan dengan fitur Directions.",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 13.0,
@@ -60,7 +60,7 @@ class PracticalShopping extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const GetStarted(),
+                                builder: (context) => const GoShop(),
                               ),
                             );
                           },

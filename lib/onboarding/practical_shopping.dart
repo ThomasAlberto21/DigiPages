@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:digipages/onboarding/practical_shopping.dart';
+import 'package:digipages/GetStarted.dart';
 
-class Start extends StatelessWidget {
-  const Start({Key? key}) : super(key: key);
+class PracticalShopping extends StatelessWidget {
+  const PracticalShopping({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class Start extends StatelessWidget {
               top: MediaQuery.of(context).size.height / 4,
               left: MediaQuery.of(context).size.width / 2 - 150,
               child: Image.asset(
-                "images/start.png",
+                "images/practical.png",
                 height: 300,
                 width: 300,
               ),
@@ -31,17 +31,17 @@ class Start extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     const Text(
-                      "Temukan barang yang anda inginkan disekitar mu",
+                      "Belanja Praktis",
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 22.0,
+                        fontSize: 24.0,
                         fontWeight: FontWeight.w600,
                         color: Colors.black,
                       ),
                     ),
                     const SizedBox(height: 10.0),
                     const Text(
-                      "Aplikasi untuk mencari dan menemukan barang yang kita inginkan di sekitar kita.",
+                      "Beli barang lewat aplikasi dan ambil di tempat agar terhindar dari antrian di kasir",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 13.0,
@@ -50,36 +50,32 @@ class Start extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 60.0),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 20.0, vertical: 40.0),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
+                    Align(
+                      alignment: Alignment.bottomRight,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 10.0, vertical: 50.0),
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const PracticalShopping()));
-                        },
-                        style: ButtonStyle(
-                          backgroundColor:
-                              MaterialStateProperty.all(Colors.blue[700]),
-                          padding: MaterialStateProperty.all(
-                            const EdgeInsets.symmetric(
-                              horizontal: 140.0,
-                              vertical: 17.0,
-                            ),
+                                builder: (context) => const GetStarted(),
+                              ),
+                            );
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.blue[700],
+                            shape: (const CircleBorder()),
                           ),
-                          shape: MaterialStateProperty.all(
-                            RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30.0),
+                          child: const IconButton(
+                            icon: Icon(
+                              Icons.arrow_forward,
+                              color: Colors.white,
                             ),
-                          ),
-                        ),
-                        child: const Text(
-                          "Mulai",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
+                            padding: EdgeInsets.all(15.0),
+                            onPressed: null,
+                            iconSize: 30.0,
                           ),
                         ),
                       ),

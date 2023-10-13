@@ -53,7 +53,7 @@ class Start extends StatelessWidget {
                     const SizedBox(height: 60.0),
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 20.0, vertical: 40.0),
+                          horizontal: 10.0, vertical: 40.0),
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.push(
@@ -68,7 +68,7 @@ class Start extends StatelessWidget {
                           padding: MaterialStateProperty.all(
                             const EdgeInsets.symmetric(
                               horizontal: 140.0,
-                              vertical: 17.0,
+                              vertical: 20.0,
                             ),
                           ),
                           shape: MaterialStateProperty.all(

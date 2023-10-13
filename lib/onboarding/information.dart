@@ -1,24 +1,35 @@
 import 'package:flutter/material.dart';
-import 'package:digipages/onboarding/go_shop.dart';
 
-class PracticalShopping extends StatelessWidget {
-  const PracticalShopping({Key? key}) : super(key: key);
+class Information extends StatelessWidget {
+  const Information({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
+        height: MediaQuery
+            .of(context)
+            .size
+            .height,
+        width: MediaQuery
+            .of(context)
+            .size
+            .width,
         color: Colors.white,
         child: Stack(
           children: [
             const SizedBox(height: 100.0),
             Positioned(
-              top: MediaQuery.of(context).size.height / 4,
-              left: MediaQuery.of(context).size.width / 2 - 150,
+              top: MediaQuery
+                  .of(context)
+                  .size
+                  .height / 4,
+              left: MediaQuery
+                  .of(context)
+                  .size
+                  .width / 2 - 150,
               child: Image.asset(
-                "images/practical.png",
+                "images/information.png",
                 height: 300,
                 width: 300,
               ),
@@ -31,7 +42,7 @@ class PracticalShopping extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     const Text(
-                      "Belanja Praktis",
+                      "Informasi Lengkap",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 24.0,
@@ -41,7 +52,7 @@ class PracticalShopping extends StatelessWidget {
                     ),
                     const SizedBox(height: 10.0),
                     const Text(
-                      "Beli barang lewat aplikasi dan ambil di tempat agar terhindar dari antrian di kasir",
+                      "Dapatkan informasi tentang detail barang , status , keterangan dan lokasi barang yang ingin dipesan.",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 13.0,
@@ -83,12 +94,7 @@ class PracticalShopping extends StatelessWidget {
                             ),
                             ElevatedButton(
                               onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => const GoShop(),
-                                  ),
-                                );
+
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.blue[700],

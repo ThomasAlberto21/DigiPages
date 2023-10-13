@@ -1,3 +1,4 @@
+import 'package:digipages/onboarding/information.dart';
 import 'package:flutter/material.dart';
 
 class GoShop extends StatelessWidget {
@@ -17,7 +18,7 @@ class GoShop extends StatelessWidget {
               top: MediaQuery.of(context).size.height / 4,
               left: MediaQuery.of(context).size.width / 2 - 150,
               child: Image.asset(
-                "images/practical.png",
+                "images/goShop.png",
                 height: 300,
                 width: 300,
               ),
@@ -30,7 +31,7 @@ class GoShop extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     const Text(
-                      "Belanja Praktis",
+                      "Pergi Ke Toko",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 24.0,
@@ -40,7 +41,7 @@ class GoShop extends StatelessWidget {
                     ),
                     const SizedBox(height: 10.0),
                     const Text(
-                      "Beli barang lewat aplikasi dan ambil di tempat agar terhindar dari antrian di kasir",
+                      "Pergi ke toko untuk mengambil barang yang sudah dipesan dengan fitur directions",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 13.0,
@@ -54,21 +55,56 @@ class GoShop extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 10.0, vertical: 50.0),
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.blue[700],
-                            shape: (const CircleBorder()),
-                          ),
-                          child: const IconButton(
-                            icon: Icon(
-                              Icons.arrow_forward,
-                              color: Colors.white,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            ElevatedButton(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.white,
+                                shape: (const CircleBorder(
+                                  side: BorderSide(
+                                    color: Colors.blue,
+                                    width: 2.0,
+                                  ),
+                                )),
+                              ),
+                              child: const IconButton(
+                                icon: Icon(
+                                  Icons.arrow_back,
+                                  color: Colors.blue,
+                                ),
+                                padding: EdgeInsets.all(15.0),
+                                onPressed: null,
+                                iconSize: 30.0,
+                              ),
                             ),
-                            padding: EdgeInsets.all(15.0),
-                            onPressed: null,
-                            iconSize: 30.0,
-                          ),
+                            ElevatedButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const Information(),
+                                  ),
+                                );
+                              },
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.blue[700],
+                                shape: (const CircleBorder()),
+                              ),
+                              child: const IconButton(
+                                icon: Icon(
+                                  Icons.arrow_forward,
+                                  color: Colors.white,
+                                ),
+                                padding: EdgeInsets.all(15.0),
+                                onPressed: null,
+                                iconSize: 30.0,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),

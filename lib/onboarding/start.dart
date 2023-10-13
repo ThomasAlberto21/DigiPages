@@ -68,7 +68,7 @@ class Start extends StatelessWidget {
                           padding: MaterialStateProperty.all(
                             const EdgeInsets.symmetric(
                               horizontal: 140.0,
-                              vertical: 20.0,
+                              vertical: 18.0,
                             ),
                           ),
                           shape: MaterialStateProperty.all(

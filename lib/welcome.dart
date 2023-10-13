@@ -37,7 +37,7 @@
                             padding: MaterialStateProperty.all(
                               const EdgeInsets.symmetric(
                                 horizontal: 140.0,
-                                vertical: 20.0,
+                                vertical: 18.0,
                               ),
                             ),
                             shape: MaterialStateProperty.all(
@@ -66,7 +66,7 @@
                             padding: MaterialStateProperty.all(
                               const EdgeInsets.symmetric(
                                 horizontal: 130.0,
-                                vertical: 20.0,
+                                vertical: 18.0,
                               ),
                             ),
                             shape: MaterialStateProperty.all(

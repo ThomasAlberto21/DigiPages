@@ -61,7 +61,7 @@ class Login extends StatelessWidget {
                         backgroundColor: MaterialStateProperty.all(blue),
                         padding: MaterialStateProperty.all(
                           const EdgeInsets.symmetric(
-                            horizontal: 151,
+                            horizontal: 141,
                             vertical: 18.0,
                           ),
                         ),
@@ -252,8 +252,8 @@ class PasswordField extends StatefulWidget {
 class _EmailFieldState extends State<EmailField> {
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      decoration: const InputDecoration(
+    return const TextField(
+      decoration: InputDecoration(
         labelText: 'Email',
         border: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(10.0))),
@@ -266,8 +266,8 @@ class _EmailFieldState extends State<EmailField> {
 class _PasswordFieldState extends State<PasswordField> {
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      decoration: const InputDecoration(
+    return const TextField(
+      decoration: InputDecoration(
         labelText: 'Password',
         border: OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(10.0)),

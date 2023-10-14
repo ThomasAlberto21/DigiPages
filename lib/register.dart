@@ -1,4 +1,5 @@
 import 'package:digipages/login.dart';
+import 'package:digipages/register_step_2.dart';
 import 'package:flutter/material.dart';
 
 class Register extends StatelessWidget {
@@ -52,12 +53,12 @@ class Register extends StatelessWidget {
                         horizontal: 5.0, vertical: 40.0),
                     child: ElevatedButton(
                       onPressed: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => const PracticalShopping(),
-                        //   ),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const RegisterStep2(),
+                          ),
+                        );
                       },
                       style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all(blue),

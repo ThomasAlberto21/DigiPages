@@ -1,4 +1,5 @@
 import 'package:digipages/login.dart';
+import 'package:digipages/register.dart';
 import 'package:flutter/material.dart';
 
 class Welcome extends StatelessWidget {
@@ -67,7 +68,14 @@ class Welcome extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 10.0, vertical: 8.0),
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Register(),
+                            ),
+                          );
+                        },
                         style: ButtonStyle(
                           backgroundColor:
                               MaterialStateProperty.all(Colors.white),

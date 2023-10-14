@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "DigiPages",
       theme: ThemeData(fontFamily: "Poppins"),
-      home: const GetStarted(),
+      home: const Register(),
     );
   }
 }

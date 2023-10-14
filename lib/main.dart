@@ -1,3 +1,4 @@
+import 'package:digipages/login.dart';
 import 'package:flutter/material.dart';
 import 'package:digipages/GetStarted.dart';
 
@@ -12,9 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "DigiPages",
-      theme: ThemeData(
-        fontFamily: "Poppins",
-      ),
+      theme: ThemeData(fontFamily: "Poppins"),
       home: const GetStarted(),
     );
   }

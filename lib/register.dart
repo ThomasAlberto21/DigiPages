@@ -1,8 +1,8 @@
-import 'package:digipages/register.dart';
+import 'package:digipages/login.dart';
 import 'package:flutter/material.dart';
 
-class Login extends StatelessWidget {
-  const Login({Key? key}) : super(key: key);
+class Register extends StatelessWidget {
+  const Register({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class Login extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Text(
-                    "Login",
+                    "Register",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 30.0,
@@ -32,7 +32,7 @@ class Login extends StatelessWidget {
                   ),
                   const SizedBox(height: 12.0),
                   const Text(
-                    "Selamat datang kembali , silahkan login terlebih dahulu dengan memasukkan email dan password anda",
+                    "Aplikasi belanja online terpercaya. Daftar sekarang dan dapatkan diskon 50%",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 12.0,
@@ -41,6 +41,8 @@ class Login extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 50.0),
+                  const NameField(),
+                  const SizedBox(height: 15.0),
                   const EmailField(),
                   const SizedBox(height: 15.0),
                   const PasswordField(),
@@ -72,7 +74,7 @@ class Login extends StatelessWidget {
                         ),
                       ),
                       child: const Text(
-                        "Login",
+                        "Next",
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
@@ -92,7 +94,7 @@ class Login extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
                         child: Text(
-                          "Or Login With",
+                          "Or Register With",
                           style: TextStyle(
                             fontSize: 12.0,
                             fontWeight: FontWeight.w500,
@@ -197,7 +199,7 @@ class Login extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Text(
-                        "Belum punya akun ?",
+                        "Sudah punya akun ?",
                         style: TextStyle(
                           fontSize: 12.0,
                           fontWeight: FontWeight.w500,
@@ -210,12 +212,12 @@ class Login extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const Register(),
+                              builder: (context) => const Login(),
                             ),
                           );
                         },
                         child: const Text(
-                          "Daftar disini",
+                          "Login disini",
                           style: TextStyle(
                             fontSize: 12.0,
                             fontWeight: FontWeight.w500,
@@ -235,6 +237,13 @@ class Login extends StatelessWidget {
   }
 }
 
+class NameField extends StatefulWidget {
+  const NameField({Key? key}) : super(key: key);
+
+  @override
+  State<NameField> createState() => _NameFieldState();
+}
+
 class EmailField extends StatefulWidget {
   const EmailField({Key? key}) : super(key: key);
 
@@ -247,6 +256,20 @@ class PasswordField extends StatefulWidget {
 
   @override
   State<PasswordField> createState() => _PasswordFieldState();
+}
+
+class _NameFieldState extends State<NameField> {
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      decoration: const InputDecoration(
+        labelText: 'Name',
+        border: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(10.0))),
+        prefixIcon: Icon(Icons.person),
+      ),
+    );
+  }
 }
 
 class _EmailFieldState extends State<EmailField> {

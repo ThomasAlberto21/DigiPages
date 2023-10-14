@@ -1,4 +1,5 @@
 import 'package:digipages/login.dart';
+import 'package:digipages/register.dart';
 import 'package:flutter/material.dart';
 import 'package:digipages/GetStarted.dart';
 

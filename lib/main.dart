@@ -1,6 +1,3 @@
-import 'package:digipages/login.dart';
-import 'package:digipages/register.dart';
-import 'package:digipages/verification.dart';
 import 'package:flutter/material.dart';
 import 'package:digipages/GetStarted.dart';
 
@@ -16,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "DigiPages",
       theme: ThemeData(fontFamily: "Poppins"),
-      home: const Register(),
+      home: const GetStarted(),
     );
   }
 }

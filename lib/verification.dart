@@ -134,7 +134,7 @@ class Verification extends StatelessWidget {
                       backgroundColor: MaterialStateProperty.all(blue),
                       padding: MaterialStateProperty.all(
                         const EdgeInsets.symmetric(
-                          horizontal: 140,
+                          horizontal: 135,
                           vertical: 18.0,
                         ),
                       ),

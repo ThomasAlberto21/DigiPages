@@ -16,7 +16,7 @@ class Login extends StatelessWidget {
           color: Colors.white,
           child: Center(
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(10.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -47,7 +47,7 @@ class Login extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 5.0, vertical: 40.0),
+                        horizontal: 10.0, vertical: 40.0),
                     child: ElevatedButton(
                       onPressed: () {
                         // Navigator.push(
@@ -61,7 +61,7 @@ class Login extends StatelessWidget {
                         backgroundColor: MaterialStateProperty.all(blue),
                         padding: MaterialStateProperty.all(
                           const EdgeInsets.symmetric(
-                            horizontal: 141,
+                            horizontal: 151,
                             vertical: 18.0,
                           ),
                         ),

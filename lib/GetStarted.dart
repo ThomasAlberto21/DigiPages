@@ -2,15 +2,31 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:digipages/onboarding/start.dart';
 
-class GetStarted extends StatelessWidget {
+class GetStarted extends StatefulWidget {
   const GetStarted({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  State<GetStarted> createState() => _GetStartedState();
+}
+
+class _GetStartedState extends State<GetStarted> {
+  bool status = true; // Menentukan status
+
+  @override
+  void initState() {
+    super.initState();
     Timer(const Duration(seconds: 3), () {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => const Start()));
+      if (status) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const Start()),
+        );
+      }
     });
+  }
+
+  @override
+  Widget build(BuildContext context) {
     Color blue = const Color(0xff2563eb);
     return Scaffold(
       body: Container(
@@ -30,5 +46,11 @@ class GetStarted extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    status = false;
+    super.dispose();
   }
 }

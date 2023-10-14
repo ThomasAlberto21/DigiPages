@@ -45,7 +45,7 @@ class Welcome extends StatelessWidget {
                           backgroundColor: MaterialStateProperty.all(blue),
                           padding: MaterialStateProperty.all(
                             const EdgeInsets.symmetric(
-                              horizontal: 151.0,
+                              horizontal: 145.0,
                               vertical: 18.0,
                             ),
                           ),
@@ -81,7 +81,7 @@ class Welcome extends StatelessWidget {
                               MaterialStateProperty.all(Colors.white),
                           padding: MaterialStateProperty.all(
                             const EdgeInsets.symmetric(
-                              horizontal: 141.0,
+                              horizontal: 135.0,
                               vertical: 18.0,
                             ),
                           ),

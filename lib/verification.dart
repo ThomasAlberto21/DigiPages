@@ -16,7 +16,7 @@ class Verification extends StatelessWidget {
         color: Colors.white,
         child: Center(
           child: Padding(
-            padding: EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(10.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -120,7 +120,7 @@ class Verification extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(
-                      horizontal: 5.0, vertical: 40.0),
+                      horizontal: 10.0, vertical: 40.0),
                   child: ElevatedButton(
                     onPressed: () {
                       Navigator.push(
@@ -134,7 +134,7 @@ class Verification extends StatelessWidget {
                       backgroundColor: MaterialStateProperty.all(blue),
                       padding: MaterialStateProperty.all(
                         const EdgeInsets.symmetric(
-                          horizontal: 130,
+                          horizontal: 140,
                           vertical: 18.0,
                         ),
                       ),

@@ -17,7 +17,7 @@ class RegisterStep2 extends StatelessWidget {
           color: Colors.white,
           child: Center(
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(10.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -53,7 +53,7 @@ class RegisterStep2 extends StatelessWidget {
                   const CityOption(),
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 5.0, vertical: 40.0),
+                        horizontal: 10.0, vertical: 40.0),
                     child: ElevatedButton(
                       onPressed: () {
                         Navigator.push(
@@ -67,7 +67,7 @@ class RegisterStep2 extends StatelessWidget {
                         backgroundColor: MaterialStateProperty.all(blue),
                         padding: MaterialStateProperty.all(
                           const EdgeInsets.symmetric(
-                            horizontal: 135,
+                            horizontal: 141,
                             vertical: 18.0,
                           ),
                         ),
